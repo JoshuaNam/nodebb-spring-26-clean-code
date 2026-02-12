@@ -56,6 +56,10 @@
 				<span class="badge bg-danger rounded-1">[[user:banned]]</span>
 				{{{ end }}}
 
+				{{{ if ./isAnonymous }}}
+				<span class="badge bg-secondary rounded-1">Anonymous</span>
+				{{{ end }}}
+
 				<div class="d-flex gap-1 align-items-center">
 					<span class="text-muted">{generateWrote(@value, config.timeagoCutoff)}</span>
 
